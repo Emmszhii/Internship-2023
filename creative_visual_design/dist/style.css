@@ -124,7 +124,7 @@
 /* -------------GRID--------------- */
 
 .container {
-    max-width: 100rem;
+    max-width: 140rem;
     width: 100%;
     padding: 1rem;
     margin: 0 auto;
@@ -140,7 +140,7 @@
 
 .header .branding h2 {
     color: white;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin-left: 1rem;
 }
 
@@ -159,16 +159,18 @@
 }
 
 .header .header__nav ul {
-    /* list-style: none; */
     display: flex;
 }
-
+.header .header__nav ul li {
+    margin-left: 2rem;
+    padding: 2rem 0;
+}
 .header .header__nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 2rem;
 }
 
-.header .header__nav ul li {
-    margin-left: 2rem;
+.header .header__nav ul li:hover a{
+    color: #ffa700;
 }
