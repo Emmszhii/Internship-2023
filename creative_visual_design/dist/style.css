@@ -149,7 +149,6 @@
 }
 
 .header .branding {
-
     display: flex;
     align-items: center;
 }
@@ -160,7 +159,7 @@
 }
 
 .header .header__nav ul {
-    list-style: none;
+    /* list-style: none; */
     display: flex;
 }
 
