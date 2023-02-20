@@ -1,5 +1,34 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+} */
+
+.fbs {
+    color: teal;
+    background: hsl(39, 100%, 60%);
+    /* width: 50rem; */
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.branding img {
+        height: 1rem;
+    }
+
+.branding h2 {
+    color:hsl(0, 100%, 60%);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.branding p {
+    color: blue;
+    font-size: 2rem;
 }
