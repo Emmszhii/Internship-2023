@@ -149,15 +149,27 @@
 }
 
 .header .branding {
-    /* height: 90px; */
+
     display: flex;
     align-items: center;
 }
-/* 
+.header .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header .header__nav ul {
     list-style: none;
-} */
+    display: flex;
+}
 
-/* .header .header__nav ul li a {
+.header .header__nav ul li a {
     text-decoration: none;
-} */
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.header .header__nav ul li {
+    margin-left: 2rem;
+}
