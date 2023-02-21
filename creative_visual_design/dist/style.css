@@ -142,6 +142,7 @@
     position: relative;
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 
 .header .branding img{
@@ -276,8 +277,9 @@
     margin: 3rem 0;
 }
 
-.banner a {
+.banner a#banner__btn {
     text-transform: uppercase;
+    border: 1px solid transparent !important;
 }
 
 @media screen and (max-width:500px){
@@ -296,6 +298,81 @@
         max-width: fit-content;
         font-size: 3rem;
         margin: 0 auto;
+    }
+}
+
+/* -------------- About me ------------------------- */
+
+.about {
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 15rem;
+}
+
+.about .about__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about__wrapper .about__img{
+    position: relative;
+    max-width: 50rem;
+    width: 50%;
+}
+
+.about .about__wrapper .about__img .overlay{
+    position: absolute;
+    max-width: 50rem;
+    top: 0;
+    left: 0;
+    opacity: .3;
+}
+.about .about__wrapper .about__img .main__img{
+    width: 100%;
+}
+
+.about .about__wrapper h2 {
+    color: #ffa700;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about .about__wrapper p {
+    margin: 3rem 0;
+}
+
+.about .about__wrapper .about__text {
+   max-width: 55rem;
+   text-align: justify;
+}
+
+@media screen and (max-width:500px) {
+    .about .about__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .about .about__wrapper .about__img {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-bottom: 2rem;
+        z-index: 1;
+    }
+    .about .about__wrapper .about__img .overlay{
+        /* max-width: 50rem; */
+        width: 100%;
+    }
+    .about .about__wrapper .about__img .main__img{
+        /* max-width: 50rem; */
+        width: 100%;
+    }
+    .about .about__wrapper h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .about .about__wrapper .about__text p {
+        max-width: 40rem;
     }
 }
 
