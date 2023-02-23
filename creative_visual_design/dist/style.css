@@ -121,7 +121,7 @@
     max-width: 100%;
   }
 
-/* -------------GRID--------------- */
+/* ------------- GRID --------------- */
 
 @media screen and (max-width: 468px){
     .container{
@@ -135,7 +135,7 @@
     padding: 1rem;
     margin: 0 auto;
 }
-/*-------------Header-------------- */
+/*------------- Header -------------- */
 .header {
     background: #2b2b2b;
     padding: 2rem 0;
@@ -260,7 +260,7 @@
 .banner .banner__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .banner .banner__text h1 {
@@ -305,8 +305,7 @@
 
 .about {
     background: #ffffff;
-    padding: 5rem 0;
-    padding-top: 15rem;
+    padding: 15rem 0;
 }
 
 .about .about__wrapper {
@@ -366,6 +365,14 @@
     .about .about__wrapper .about__text p {
         max-width: 40rem;
     }
+    .about .about__wrapper .about__text .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .about__wrapper .about__text .icons ul li {
+        margin: 0 auto;
+    }
 }
 
 /* -------------- hm-services ---------------------- */
@@ -412,6 +419,402 @@
         padding: 8rem 0;
     }
 }
+
+
+/* -------------- Latest Trends -------------------- */
+
+.trends {
+    background: #2b2b2b;
+    padding: 8rem 0;
+}
+
+.trends .trends__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    margin: 5rem 0;
+}
+
+.trends .trends__title h2 {
+    font-size: 4rem;
+    color: #ffa700;
+}
+
+.trends .trends__title p {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.trends .trends__wrapper .trend{
+    margin: 0 auto;
+}
+.trends .trends__wrapper .trend .content img{
+    width: 100%;
+}
+
+.trends .trends__wrapper .trend .content .text {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+}
+.trends .trends__wrapper .trend .content .text h4{
+    color: #ffa700;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.trends .trends__wrapper .trend .content .text p{
+    margin: 3rem 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+}  
+.trends .trends__wrapper .trend .content .text a{
+    color: #ffa700;
+}
+
+@media screen and (max-width:500px){
+    .trends .trends__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .trends .trends__title,
+    .trends .trends__wrapper .trend {
+        margin: 2rem auto;
+        max-width: 40rem;   
+    }
+    .trends .trends__title{
+        text-align: center;
+    }
+}
+
+/* ------------- Banner about ----------------- */
+
+.banner__about {
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 15rem;
+    height: 100vh;
+}
+
+.banner__about .banner__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5rem 0;
+}
+.banner__about .banner__wrapper .banner__text{
+    max-width: 40rem;
+    text-align: justify;
+}
+.banner__about .banner__wrapper .banner__text h2 {
+    font-size: 8rem;
+    font-weight: 600;
+    color: #ffa700;
+}
+.banner__about .banner__wrapper .banner__text .text p {
+    margin: 3rem 0;
+}
+.banner__about .banner__wrapper .banner__text .icons ul {
+    display: flex;
+}
+.banner__about .banner__wrapper .banner__text .icons ul li a {
+    color: #ffa700;
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.banner__about .banner__wrapper .banner__text .icons ul li a:hover{
+    color: #2b2b2b;
+}
+
+.banner__about .container .fa-chevron-down {
+    color: #ffa700;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+.banner__about .container .fa-chevron-down:hover{
+    color: #2b2b2b;
+}
+
+@media screen and (max-width:500px){
+    .banner__about {
+        padding-top: 8rem;
+    }
+    .banner__about .banner__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner__about .banner__wrapper .banner__text{
+        margin-top: 2rem;
+    }
+    .banner__about .banner__wrapper .banner__text h2{
+        font-size: 3rem;
+    }
+    .banner__about .banner__wrapper .banner__text:first-child{
+        text-align: center;
+    }
+    .banner__about .banner__wrapper .banner__text .text {
+        text-align: justify !important;
+    }
+}
+
+/* -------------- projects ------------------------- */
+
+.projects {
+    background: #2b2b2b;
+}
+
+.projects .projects__wrapper{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.projects .projects__wrapper .title{
+    color: #ffffff;
+    margin: 4rem 0;
+}
+
+.projects .projects__wrapper .title p {
+    font-size: 2rem;
+}
+
+.projects .projects__wrapper .title h3 {
+    color: #ffa700;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.projects .projects__wrapper .projects__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    margin: 5rem 0;
+}
+.projects .projects__wrapper .projects__container .project {
+    display: flex;
+    flex-direction: column;
+}
+.projects .projects__wrapper .projects__container .project img {
+    width: 100%;
+}
+.projects .projects__wrapper .projects__container .project .text {
+    padding: 2rem;
+}
+.projects .projects__wrapper .projects__container .project .text h3 {
+    color: #ffa700;
+    font-weight: 600;   
+}
+.projects .projects__wrapper .projects__container .project .text p {
+    margin: 2.5rem 0;
+}
+
+@media screen and (max-width:500px) {
+    .projects .projects__wrapper .projects__container {
+        display: block;
+    }
+    .projects .projects__wrapper .projects__container .project {
+        margin: 3rem 0;
+    }
+}
+
+
+/* -------------- hm-contact ----------------------- */
+
+.hm-contact {
+    background: #ffa700;
+}
+
+.hm-contact .hm-contact__wrapper {
+    text-align: center;
+    margin: 8rem 0;
+}
+
+.hm-contact .hm-contact__wrapper h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+}
+.hm-contact .hm-contact__wrapper p {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.hm-contact .hm-contact__wrapper a {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+
+@media screen and (max-width:500px){
+    .hm-contact .hm-contact__wrapper p {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+}
+
+/* -------------- Footer --------------------------- */
+
+.footer {
+    background: #2b2b2b;
+    padding: 1.5rem 0;
+}
+
+.footer .footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    opacity: .5;
+}
+
+.footer .footer__wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer__wrapper ul li {
+    color: #ffffff;
+}
+.footer .footer__wrapper ul li a {
+    font-size: 2.5rem;
+}
+.footer .footer__wrapper .footer__socials p {
+    opacity: .6;
+    margin-left: 4rem;
+}
+.footer .footer__wrapper ul li a i {
+    color: hsl(0, 0%, 70%);
+    opacity: .6;
+    margin: 0 .5rem;
+}
+
+.footer .footer__wrapper ul li a i:hover {
+    opacity: 1;
+}
+
+.footer .footer__wrapper ul li p:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.footer .footer__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer__wrapper p{
+    opacity: .6;
+}
+.footer .footer__wrapper p:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+@media screen and (max-width:500px){
+    .footer .footer__wrapper .footer__socials{
+        flex-direction: column;
+    }
+    .footer .footer__wrapper .footer__socials p {
+        padding-top: 2rem;
+        margin: 0;
+    }
+    .footer .footer__wrapper {
+        flex-direction: column;
+    }
+    .footer .footer__wrapper p {
+        margin-top: 2rem;
+    }
+}
+
+/* -------------- Updates --------------------------- */
+
+.updates{
+    background-color: #ffffff;
+    padding: 5rem 0;
+}
+
+.updates__wrapper {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    column-gap: 5rem;
+    row-gap: 0;
+}
+
+.updates .updates__title {
+    padding-top: 15rem;
+}
+.updates .updates__title h1{
+    color: #ffa700;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.updates .updates__item img {
+    width: 100%;
+}
+.updates .updates__item {
+    padding: 5rem 0;
+    /* border-bottom: 1px solid #2b2b2b; */
+}
+.updates .updates__author ul {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.updates .updates__author ul li {
+    margin-right: 4rem;
+}
+
+.updates .updates__author ul li i {
+    margin-right: 1rem;
+}
+
+.updates .updates__text h3 {
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.updates .updates__text p {
+    margin: 2.5rem 0;
+    text-align: justify;
+}
+
+.updates .updates__text a {
+    color: #ffa700;
+}
+
+.updates .updates__item:not(:last-child){
+    border-bottom: 1px solid black;
+}
+
+.updates .updates__item:last-child{
+    padding-bottom: 0;
+}
+
+.updates .updates__categ {
+    padding: 5rem 0;
+}
+.updates .updates__categ h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.updates .updates__categ table{
+    width: 100%;
+    margin-top: 3rem;
+}
+.updates .updates__categ table tr{
+    height: 5rem;
+}
+
 /* -------------- Repeatable pattern --------------- */
 
 .btn {
@@ -432,9 +835,40 @@
     color: #ffffff;
 }
 
+.bg--white {
+    background-color: #ffffff;
+}
+
 .bg--yellow:hover{
     background: #2b2b2b;
     color: #ffa700;
     transition: .5s ease;
     border: 1px solid #ffa700;
+}
+
+.bg--dark:hover{
+    background: #ffa700;
+    color: #2b2b2b;
+    transition: .5s ease;
+    border: 1px solid #2b2b2b;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    color: #ffa700 !important;
+}
+
+.bb--1 {
+    border-bottom: 1px solid black;
 }
