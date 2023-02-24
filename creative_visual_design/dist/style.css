@@ -1003,6 +1003,80 @@
 }
 
 /* -------------- contact page --------------------- */
+/* -------------- contact section --------------------- */
+
+.contacts {
+    background: #2b2b2b;
+    padding-top: 25rem;
+    padding-bottom: 14rem;
+}
+.contacts .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts .contacts__wrapper .contacts__info{
+    color: #ffffff;
+    max-width: 60rem;
+}
+.contacts .contacts__wrapper .contacts__info h2{
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ffa700;
+    text-transform: capitalize;
+}
+.contacts .contacts__wrapper .contacts__info p {
+    margin: 4rem 0;
+}
+.contacts .contacts__wrapper .contacts__info table{
+    margin: 5rem 0;
+}
+.contacts .contacts__wrapper .contacts__info table tr td:first-child{
+    font-size: 3rem;
+}
+.contacts .contacts__wrapper .contacts__info table tr td:nth-child(2) {
+    padding-left: 2rem;
+}
+.contacts .contacts__wrapper .contacts__info ul:nth-child(4){
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+}
+.contacts .contacts__wrapper .contacts__info ul li a {
+    color: #ffffff;
+}
+
+.contacts .contacts__wrapper .contacts__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem;
+}
+.contacts .contacts__wrapper .contacts__form input {
+    /* max-width: 60rem; */
+    height: 4rem;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+.contacts .contacts__wrapper .contacts__form input::placeholder{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.contacts .contacts__wrapper .contacts__form input.area {
+    padding-bottom: 15rem;
+}
+
+.contacts .contacts__wrapper .contacts__form button {
+    width: 20%;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+@media screen and (max-width:500px) {
+    .contacts .contacts__wrapper{
+        display: block;
+    }
+}
 
 /* -------------- Repeatable pattern --------------- */
 
@@ -1084,6 +1158,10 @@
     border-bottom: 1px solid black;
 }
 
+.bb--shadow {
+    box-shadow: 1px 1px 5px 1px black;
+}
+
 .active--black {
     color: #ffffff;
     background: #2b2b2b;
@@ -1103,4 +1181,8 @@
 
 .f--right {
     float: right;
+}
+
+.pointer {
+    cursor: pointer;
 }
