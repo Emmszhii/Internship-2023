@@ -934,6 +934,76 @@
     border: 2px solid black;
 }
 
+/* Services Page */
+
+/* -------------- Services ------------------------- */
+
+.services {
+    padding-top: 12rem;
+}
+
+.services .services__wrapper .services__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 8rem 0; */
+}
+.services .services__wrapper .services__item img {
+    width: 40%;
+}
+.services .services__wrapper .services__item .services__title{
+    max-width: 50rem;
+}
+.services .services__wrapper .container .fa-chevron-down{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+.services .services__item .services__title h2 {
+    color: #ffa700;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 5.5rem;
+}
+
+.services .services__item .services__title .services__text p {
+    margin: 3rem 0;
+    text-align: justify;
+}
+
+.services .services__item .services__title .services__price h4 {
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.services .services__item .services__title .services__price .italic{
+    font-style: italic;
+    max-width: 18rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:500px){
+    .services {
+        padding: 8rem 0;
+    }
+    .services .services__wrapper .services__item{
+        flex-direction: column-reverse;
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+    .services .services__wrapper .services__item .services__title h2{
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .services .services__wrapper .container .fa-chevron-down{
+        margin-top: 1rem;
+    }
+}
+
+/* -------------- contact page --------------------- */
+
 /* -------------- Repeatable pattern --------------- */
 
 .btn {
@@ -941,6 +1011,17 @@
     border-radius: 5rem;
     display: inline-block;
     border: 1px solid transparent;
+}
+
+.txt--black {
+    color: #ffffff;
+}
+
+.txt--white {
+    color: #ffffff;
+}
+.txt--yellow {
+    color: #ffa700;
 }
 
 .bg--yellow{
@@ -952,6 +1033,10 @@
 .bg--dark {
     background: #2b2b2b;
     color: #ffffff;
+}
+
+.bg--dark--services {
+    background: #2b2b2b;
 }
 
 .bg--white {
@@ -1002,4 +1087,20 @@
 .active--black {
     color: #ffffff;
     background: #2b2b2b;
+}
+
+.pd--tb {
+    padding: 8rem 0;
+}
+
+.flex--reverse{
+    flex-direction: row-reverse;
+}
+
+.bt {
+    border-top: 1px solid #ffffff;
+}
+
+.f--right {
+    float: right;
 }
